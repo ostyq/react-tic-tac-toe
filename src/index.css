@@ -1,0 +1,96 @@
+body {
+  font: 14px 'Century Gothic', Futura, sans-serif;
+  margin: 20px;
+}
+
+ul {
+  padding-left: 30px;
+  font-size: 18px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+div.game-board {
+  margin-top: 50px;
+}
+
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid rgb(10, 2, 2);
+  float: left;
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 64px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 64px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 30px;
+  font-size: 26px;
+  color: rgb(36, 162, 159);
+}
+button.path-buttons {
+  background-color: #1abc9c;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 1px;
+  margin-left: 20px;
+  width: 180px;
+  border: 1px solid #087e66;
+  border-bottom: 2px solid #3a9a95;
+  border-radius: 3px;
+}
+button:focus {
+  outline: none;
+}
+button:hover {
+  cursor: pointer;
+  background-color: rgb(7, 129, 127);
+}
+
+.bold-text {
+  font-weight: 600;
+}
+
+.green-background {
+  background-color: rgb(47, 215, 212);
+}
+
+div.status-bar {
+  margin-left: 30px;
+  color: rgb(7, 129, 127);
+  font-weight: 600px;
+  font-size: 30px;
+}
+
+.path-list {
+  display: flex;
+  justify-content: space-between;
+  min-width: 624px;
+}
