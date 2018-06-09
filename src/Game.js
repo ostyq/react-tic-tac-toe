@@ -80,6 +80,19 @@ class Game extends React.Component {
     });
   }
 
+  restartGame() {
+    this.setState({
+      history: [
+        {
+          squares: Array(9).fill(null),
+        },
+      ],
+      stepNumber: 0,
+      xIsNext: true,
+      movesHistory: ['init'],
+    });
+  }
+
   render() {
     const history = this.state.history;
     const movesHistory = this.state.movesHistory;
@@ -117,6 +130,9 @@ class Game extends React.Component {
             winnerSquares={winningCombination}
             onClick={i => this.handleClick(i)}
           />
+          <button className="reset-button path-buttons" onClick={() => this.restartGame()}>
+            Reset Game
+          </button>
         </div>
         <div className="game-info">
           <div className="status-bar">{status}</div>

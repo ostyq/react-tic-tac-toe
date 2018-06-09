@@ -94,3 +94,9 @@ div.status-bar {
   justify-content: space-between;
   min-width: 624px;
 }
+
+button.path-buttons.reset-button {
+  margin-top: 25px;
+  margin-left: 0px;
+  width: 190px;
+}
